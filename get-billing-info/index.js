@@ -15,7 +15,7 @@ Unique category.resourceGroup values:
 
 */
 
-exports.getSkusData = async (req, res) => {
+exports.getSkusData = async (_req, res) => {
   const relevantSkus = JSON.parse(await fs.readFile('skus.json', 'utf-8'))
     .filter(sku => sku.serviceRegions.includes("us-west1"))
     .filter(sku => sku.category.resourceFamily === 'Compute')
