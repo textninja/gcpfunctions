@@ -1,0 +1,17 @@
+{
+  "name": "sample-http",
+  "version": "0.0.1",
+  "scripts": {
+    "watch": "npm-watch start",
+    "start": "npx @google-cloud/functions-framework --target=getSkusData"
+  },
+  "watch": {
+    "start": "*.js"
+  },
+  "dependencies": {
+    "@google-cloud/billing": "^2.4.0"
+  },
+  "devDependencies": {
+    "npm-watch": "^0.11.0"
+  }
+}
