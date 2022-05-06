@@ -1,0 +1,21 @@
+{
+  "name": "get-ip",
+  "version": "1.0.0",
+  "description": "Get the ip address for the function invoker",
+  "main": "index.js",
+  "watch": {
+    "start": "*.js"
+  },
+  "scripts": {
+    "start": "npx @google-cloud/functions-framework --target=getIp",
+    "watch": "npm-watch start",
+    "deploy": "gcloud functions deploy --trigger-http --memory=128 --entry-point=getIp --runtime=nodejs16 get-ip-address"
+  },
+  "author": "Joe Taylor <joe@textninja.net>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^3.1.1",
+    "npm-watch": "^0.11.0"
+  }
+}
