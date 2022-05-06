@@ -1,0 +1,24 @@
+{
+  "name": "check-if-website-is-up",
+  "version": "1.0.0",
+  "description": "Check to see if a website is returning status code 200",
+  "main": "index.js",
+  "watch": {
+    "start": "*.js"
+  },
+  "scripts": {
+    "start": "npx @google-cloud/functions-framework --target=checkUptime",
+    "deploy:textninja": "gcloud functions deploy --runtime=nodejs16 --set-build-env-vars PLAYWRIGHT_BROWSERS_PATH=0 --set-env-vars website=https://www.textninja.net,PLAYWRIGHT_BROWSERS_PATH=0 --trigger-http --entry-point=checkUptime check-if-textninja-is-up",
+    "watch": "npm-watch start"
+  },
+  "author": "Joe Taylor <joe@textninja.net>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.1.1",
+    "playwright": "^1.21.1"
+  },
+  "devDependencies": {
+    "npm-watch": "^0.11.0"
+  }
+}
