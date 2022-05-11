@@ -1,0 +1,26 @@
+{
+  "name": "shutdown-project",
+  "version": "1.0.0",
+  "description": "Project auto-destruct",
+  "main": "index.js",
+  "watch": {
+    "start": "*.js"
+  },
+  "scripts": {
+    "start": "npx @google-cloud/functions-framework --target=selfdestruct",
+    "watch": "npm-watch start",
+    "deploy": "toys zip && cd ../terraform && terraform apply"
+  },
+  "author": "Joe Taylor <joe@textninja.net>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^3.1.1",
+    "npm-watch": "^0.11.0"
+  },
+  "dependencies": {
+    "@google-cloud/resource-manager": "^3.2.0",
+    "gcp-metadata": "^5.0.0",
+    "google-gax": "^2.30.3"
+  }
+}
