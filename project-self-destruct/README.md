@@ -4,7 +4,7 @@ When this function is invoked, it shuts down the project it's deployed in. It sh
 
 ## Why?
 
-Deleting projects when certain conditions are met, such as going over a billing threshold or reaching an autodestruct deadline, is a useful way to manage costs and complexity. It can be reassuring, for example, to know a project running heavy duty GPU workloads will be deleted before the fees can get too far out of hand.
+Deleting projects when certain conditions are met, such as going over a billing threshold, or reaching an autodestruct deadline, is a useful way to manage costs and complexity. It can be reassuring, for example, to know a project running heavy duty GPU workloads will be deleted before the fees can get too far out of hand.
 
 ## Deployment
 
