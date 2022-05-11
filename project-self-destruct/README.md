@@ -1,6 +1,6 @@
 # Project Self-Destruct
 
-When this function is invoked, it shuts down the project it's deployed in. It should go without saying, but **BE CAREFUL**--while this *is* in fact a toy, **it is a very dangerous one**, and not at all intended for production or serious use. If you're using this in a project with critical services, calling it could have serious and irreversible consequences!
+When this function is invoked, it shuts down the project it's deployed in. It should go without saying, but **BE CAREFUL**—while this *is* in fact a toy, **it is a very dangerous one**, and not at all intended for production or serious use. If you're using this in a project with critical services, calling it could have serious and irreversible consequences!
 
 ## Why?
 
